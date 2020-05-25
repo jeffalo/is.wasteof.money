@@ -42,7 +42,7 @@
     ];
 
     check = () => {
-        let found = items.find(item => item.name == input.value);
+        let found = items.find(item => item.name == input.value.toLowerCase());
         isWaste = found? found.isWaste: "undefined";
 
         result.innerText =  {"free": "its free you idot", true: "yes", false: "no", "undefined": "Not found yet... keep trying?"}[isWaste];
