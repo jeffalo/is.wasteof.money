@@ -1,0 +1,52 @@
+:root{
+    --color: #ffaa00;
+}
+
+body{
+    background-color: #2B2B2B;
+    color: white;
+    font-family: sans-serif;
+}
+
+h1{
+    color: var(--color);
+}
+
+hr{
+    border-color: var(--color);
+}
+
+p{
+    color: white;
+}
+
+input[type=text] {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 5px solid var(--color);
+    width: 15rem;
+    transition: width, 0.2s;
+    text-align: center;
+}
+
+input:focus{
+    outline: none;
+    width: 20rem;
+}
+
+.thething{
+    font-size: 40px;
+    text-align: center;
+}
+.incontainer{
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.result{
+    text-align: center;
+    padding-bottom: 200px;
+}

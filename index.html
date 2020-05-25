@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>is.wasteof.money</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>is.wasteof.money</h1>
+    </header>
+    <hr>    
+    <main>
+        <div class="incontainer"><strong class="thething">Is <input id="input" type="text"> a waste of money?</strong></div>
+        <div id="result" class="result">yes im sorry</div>
+    </main>
+</body>
+<script>
+    var input = document.getElementById('input')
+    
+
+    input.addEventListener('keypress', e=>{
+        if(e.code == 'Enter'){
+            check(input.value)
+        }
+    })
+
+    function check(checkInput){
+        var result = document.getElementById('result')
+
+        var items = [{name:'iphone', price:true},{name:'android', price: false}]
+        var filtered = items.filter(function(items){ return items.name === checkInput })
+        if(filtered[0] == undefined){
+            //be sad
+            result.innerText = 'not found in our advanced system'
+        } else {
+            if(filtered[0].name == checkInput){
+                if(filtered[0].price){
+                    result.innerText = 'yes'
+                } else{
+                    if(filtered[0].price == 'free'){
+                        result.innerText = 'its free u idot'
+                    } else{
+                        result.innerText = 'no'
+                    }
+                }
+            }
+        }
+    }
+</script>
+</html>
