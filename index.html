@@ -27,9 +27,9 @@
 
     check = () => {
         let found = items.find(item => item.name == input.value);
-        price = found? String(found.price): "undefined";
+        price = found? found.price: "undefined";
 
-        result.innerText =  {"free": "its free you idot", "true": "yes", "false": "no", "undefined": "Not found yet... keep trying?"}[price];
+        result.innerText =  {"free": "its free you idot", true: "yes", false: "no", "undefined": "Not found yet... keep trying?"}[price];
     }
 </script>
 </html>
