@@ -20,16 +20,17 @@
     const result = document.getElementById('result');
     const input  = document.getElementById('input');
     const items  = [
-        {name:  'iphone', price: true  },
-        {name: 'android', price: false },
-        {name:  'leaves', price: 'free'}
+        {name:  'iphone', isWaste: true},
+        {name: 'android', isWaste: false},
+        {name:  'minecraft', isWaste: false},
+        {name: 'air', isWaste: true}
     ];
 
     check = () => {
         let found = items.find(item => item.name == input.value);
-        price = found? found.price: "undefined";
+        isWaste = found? found.isWaste: "undefined";
 
-        result.innerText =  {"free": "its free you idot", true: "yes", false: "no", "undefined": "Not found yet... keep trying?"}[price];
+        result.innerText =  {"free": "its free you idot", true: "yes", false: "no", "undefined": "Not found yet... keep trying?"}[isWaste];
     }
 </script>
 </html>
