@@ -1,28 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://is.wasteof.money" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Is it a waste of money?" />
-    <meta property="og:description" content="Find out if a product is a waste of money." />
-    <meta property="og:image" content="/assets/logo.png" />
-    <link rel="icon" href="/assets/logo.png">
-    <title>is.wasteof.money</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <a class="noline"href="/"><h1>is.wasteof.money</h1></a>
-        <a href="/about">about</a> | <a href="https://github.com/JeffaloBob/is.wasteof.money/">github</a>
-        <hr> 
-    </header>   
-    <main>
-        <div class="incontainer"><strong class="thething">Is <input oninput="check()" spellcheck="false" id="input" type="text"> a waste of money?</strong></div>
-        <div id="result" class="result">Try to type something!</div>
-    </main>
-</body>
+---
+layout: wasteof
+title: Home
+metatitle: Is it a waste of money?
+metadesc: Find out if a product is a waste of money.
+---
+
+<div class="incontainer"><strong class="thething">Is <input oninput="check()" spellcheck="false" id="input" type="text"> a waste of money?</strong></div>
+<div id="result" class="result">Try to type something!</div>
+
 <script>
     const result = document.getElementById('result');
     const input  = document.getElementById('input');
@@ -49,4 +34,3 @@
         result.innerText =  {"free": "its free you idot", true: "yes", false: "no", "undefined": "Not found yet... keep trying?"}[isWaste];
     }
 </script>
-</html>

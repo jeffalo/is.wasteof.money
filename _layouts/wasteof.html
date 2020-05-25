@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://is.wasteof.money" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ page.metatitle }}" />
+    <meta property="og:description" content="{{ page.metadesc }}" />
+    <meta property="og:image" content="/assets/logo.png" />
+    <link rel="icon" href="/assets/logo.png">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="noline"href="/"><h1>{{ site.title }}</h1></a>
+        <a href="/about">about</a> | <a href="https://github.com/JeffaloBob/is.wasteof.money/">github</a>
+    </header> 
+    <hr>
+    <main>{{ content }}</main>
+</body>
+</html>
