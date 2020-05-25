@@ -27,7 +27,7 @@ input[type=text] {
     font-size: 40px;
     font-weight: bold;
     border-bottom: 5px solid var(--color);
-    width: 15rem;
+    width: 23rem;
     transition: width, 0.1s;
     text-align: center;
     caret-color: var(--color);
@@ -35,7 +35,7 @@ input[type=text] {
 
 input:focus{
     outline: none;
-    width: 20rem;
+    width: 25rem;
     border-bottom: 3px solid var(--color);
 }
 
