@@ -28,13 +28,14 @@ input[type=text] {
     font-weight: bold;
     border-bottom: 5px solid var(--color);
     width: 15rem;
-    transition: width, 0.2s;
+    transition: width, 0.1s;
     text-align: center;
 }
 
 input:focus{
     outline: none;
     width: 20rem;
+    border-bottom: 3px solid var(--color);
 }
 
 .thething{
