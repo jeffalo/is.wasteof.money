@@ -30,6 +30,7 @@ input[type=text] {
     width: 15rem;
     transition: width, 0.1s;
     text-align: center;
+    caret-color: var(--color);
 }
 
 input:focus{
@@ -51,3 +52,10 @@ input:focus{
     text-align: center;
     padding-bottom: 200px;
 }
+
+::selection {
+    background: var(--color);
+  }
+  ::-moz-selection {
+    background: var(--color);
+  }
