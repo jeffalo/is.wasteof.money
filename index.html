@@ -3,33 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="https://is.wasteof.money" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Is it a waste of money?" />
+    <meta property="og:description" content="Find out if a product is a waste of money." />
+    <meta property="og:image" content="/assets/logo.png" />
+    <link rel="icon" href="/assets/logo.png">
     <title>is.wasteof.money</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>is.wasteof.money</h1>
-    </header>
-    <hr>    
+        <a class="noline"href="/"><h1>is.wasteof.money</h1></a>
+        <a href="/about">about</a> | <a href="https://github.com/JeffaloBob/is.wasteof.money/">github</a>
+        <hr> 
+    </header>   
     <main>
-        <div class="incontainer"><strong class="thething">Is <input oninput="check()" id="input" type="text"> a waste of money?</strong></div>
-        <div id="result" class="result">Try type something!</div>
+        <div class="incontainer"><strong class="thething">Is <input oninput="check()" spellcheck="false" id="input" type="text"> a waste of money?</strong></div>
+        <div id="result" class="result">Try to type something!</div>
     </main>
 </body>
 <script>
     const result = document.getElementById('result');
     const input  = document.getElementById('input');
     const items  = [
-        {name:  'iphone', price: true  },
-        {name: 'android', price: false },
-        {name:  'leaves', price: 'free'}
+        {name:  'iphone', isWaste: true},
+        {name: 'android', isWaste: false},
+        {name:  'minecraft', isWaste: false},
+        {name: 'air', isWaste: 'free'},
+        {name: 'https', isWaste: 'free'},
+        {name: 'this website', isWaste: true},
+        {name: 'optifine', isWaste: 'free'},
+        {name: 'optifine cape', isWaste: false},
+        {name: 'samsung', isWaste: true},
+        {name: 'google', isWaste: 'free'},
+        {name: 'james', isWaste: true},
+        {name: 'minecraft bedrock', isWaste: true},
+        {name: 'fortnite', isWaste: 'free'}
     ];
 
     check = () => {
-        let found = items.find(item => item.name == input.value);
-        price = found? found.price: "undefined";
+        let found = items.find(item => item.name == input.value.toLowerCase());
+        isWaste = found? found.isWaste: "undefined";
 
-        result.innerText =  {"free": "its free you idot", true: "yes", false: "no", "undefined": "Not found yet... keep trying?"}[price];
+        result.innerText =  {"free": "its free you idot", true: "yes", false: "no", "undefined": "Not found yet... keep trying?"}[isWaste];
     }
 </script>
 </html>

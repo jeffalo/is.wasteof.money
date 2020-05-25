@@ -1,5 +1,5 @@
 :root{
-    --color: #ffaa00;
+    --color: orange;
 }
 
 body{
@@ -8,8 +8,18 @@ body{
     font-family: sans-serif;
 }
 
+header{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
 h1{
-    color: var(--color);
+    color: white;
+    font-size: 20px;
+}
+
+a{
+    color: white;
 }
 
 hr{
@@ -27,14 +37,16 @@ input[type=text] {
     font-size: 40px;
     font-weight: bold;
     border-bottom: 5px solid var(--color);
-    width: 15rem;
-    transition: width, 0.2s;
+    width: 23rem;
+    transition: width, 0.1s;
     text-align: center;
+    caret-color: var(--color);
 }
 
 input:focus{
     outline: none;
-    width: 20rem;
+    width: 25rem;
+    border-bottom: 3px solid var(--color);
 }
 
 .thething{
@@ -49,4 +61,19 @@ input:focus{
 .result{
     text-align: center;
     padding-bottom: 200px;
+}
+
+::selection {
+    background: var(--color);
+  }
+  ::-moz-selection {
+    background: var(--color);
+  }
+
+main{
+    padding: 25px
+}
+
+.noline{
+    text-decoration: none;
 }
