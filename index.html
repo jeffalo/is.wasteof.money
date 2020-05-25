@@ -12,41 +12,22 @@
     </header>
     <hr>    
     <main>
-        <div class="incontainer"><strong class="thething">Is <input id="input" type="text"> a waste of money?</strong></div>
-        <div id="result" class="result">yes im sorry</div>
+        <div class="incontainer"><strong class="thething">Is <input oninput="check()" id="input" type="text"> a waste of money?</strong></div>
+        <div id="result" class="result">Try type something!</div>
     </main>
 </body>
 <script>
-    var input = document.getElementById('input')
-    
+    const result = document.getElementById('result');
+    const input = document.getElementById('input');
+    const items = [{name:'iphone', price:true},{name:'android', price: false},{name:'leaves', price: 'free'}];
 
-    input.addEventListener('keypress', e=>{
-        if(e.code == 'Enter'){
-            check(input.value)
-        }
-    })
-
-    function check(checkInput){
-        var result = document.getElementById('result')
-
-        var items = [{name:'iphone', price:true},{name:'android', price: false}]
-        var filtered = items.filter(function(items){ return items.name === checkInput })
-        if(filtered[0] == undefined){
-            //be sad
-            result.innerText = 'not found in our advanced system'
-        } else {
-            if(filtered[0].name == checkInput){
-                if(filtered[0].price){
-                    result.innerText = 'yes'
-                } else{
-                    if(filtered[0].price == 'free'){
-                        result.innerText = 'its free u idot'
-                    } else{
-                        result.innerText = 'no'
-                    }
-                }
-            }
-        }
+    function check(){
+        let found = items.find(item => item.name === input.value);
+        price = found? found.price: 0;
+        if(found == undefined)
+            result.innerText = 'Keep typing...';
+        else
+            result.innerText = price? price=="free"? "its free u idot": "yes": "no";
     }
 </script>
 </html>
