@@ -25,7 +25,7 @@
         let found = items.find(item => item.name === input.value);
         price = found? found.price: 0;
         if(found == undefined)
-            result.innerText = 'Keep typing...';
+            result.innerText = 'Not found yet... keep typing?';
         else
             result.innerText = price? price=="free"? "its free u idot": "yes": "no";
     }
