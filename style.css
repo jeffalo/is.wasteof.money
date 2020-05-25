@@ -8,8 +8,18 @@ body{
     font-family: sans-serif;
 }
 
+header{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
 h1{
-    color: var(--color);
+    color: white;
+    font-size: 20px;
+}
+
+a{
+    color: white;
 }
 
 hr{
@@ -59,3 +69,11 @@ input:focus{
   ::-moz-selection {
     background: var(--color);
   }
+
+main{
+    padding: 25px
+}
+
+.noline{
+    text-decoration: none;
+}
