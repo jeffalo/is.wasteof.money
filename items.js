@@ -26,5 +26,6 @@ const items  = [
     {name: 'toilet paper', isWaste: true, explanation: 'welcome to 2020'},
     {name: 'i', isWaste: true},
     {name: 'life', isWaste: 'custom', custom: 'depends'},
-    {name: 'pain', isWaste: 'custom', custom: 'depends', explanation: 'what kind of pain are you talking about? bread is not a waste of money'}
+    {name: 'pain', isWaste: 'custom', custom: 'depends', explanation: 'what kind of pain are you talking about? bread is not a waste of money'},
+    {name: 'infinite pain', isWaste: 'free', explanation: 'even though this is free i\'d say its still a waste of free'}
 ];
