@@ -29,9 +29,9 @@
     const result = document.getElementById('result');
     const input  = document.getElementById('input');
     const items  = [
-        {name:  'iphone', isWaste: true},
+        {name: 'iphone', isWaste: true},
         {name: 'android', isWaste: false},
-        {name:  'minecraft', isWaste: false},
+        {name: 'minecraft', isWaste: false},
         {name: 'air', isWaste: 'free'},
         {name: 'https', isWaste: 'free'},
         {name: 'this website', isWaste: true},
@@ -57,25 +57,19 @@
         minMatchCharLength: 2
     })
 
-    const generateFuseMessage = function(term) {
+    const generateFuseMessage = term => {
         term = term.toLowerCase();
 
-        if (term.length < 3){
+        if (term.length < 3)
             return "Not found yet... keep trying?";
-        }
         
         const fuseResults = fuse.search(term);
         let message = "Did you mean: ";
 
-        for (let item of fuseResults){
-            message += item.item.name + ", ";
-        }
+        for (let item of fuseResults)
+            message += item.item.name + ",";
 
-        if (message != "Did you mean: "){
-            return message.slice(0, -2);
-        } else {
-            return "Not found yet... keep trying?";
-        }    
+        return message != "Did you mean: "? message.slice(0, -1): "Not found yet... keep trying?";
     }
 
     const check = () => {
