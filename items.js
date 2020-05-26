@@ -23,5 +23,8 @@ const items  = [
     {name: 'faithful', isWaste: 'custom', custom: 'depends'},
     {name: 'css', isWaste: 'true', explanation: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'},
     {name: 'water', isWaste: 'custom', custom: 'depends', explanation: 'it really depends on a lot of things'},
-    {name: 'toilet paper', isWaste: true, explanation: 'welcome to 2020'}
+    {name: 'toilet paper', isWaste: true, explanation: 'welcome to 2020'},
+    {name: 'i', isWaste: true},
+    {name: 'life', isWaste: 'custom', custom: 'depends'},
+    {name: 'pain', isWaste: 'custom', custom: 'depends', explanation: 'depends what kind of pain you\'re talking about, bread is not a waste of money'}
 ];
