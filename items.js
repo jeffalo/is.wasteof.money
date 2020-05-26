@@ -3,7 +3,7 @@ const items  = [
     {name: 'android', isWaste: false},
     {name: 'minecraft', isWaste: false},
     {name: 'air', isWaste: 'free'},
-    {name: 'https', isWaste: 'free'},
+    {name: 'https', isWaste: 'custom', custom: 'depends', explanation: 'https is not a waste of money if you get it free'},
     {name: 'this website', isWaste: 'custom', custom: 'how dare you check if this website is a waste of money!! its free how could it possibly be???'},
     {name: 'optifine', isWaste: 'free'},
     {name: 'optifine cape', isWaste: false},
