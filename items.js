@@ -18,5 +18,8 @@ const items  = [
     {name: 'youtube red', isWaste: true},
     {name: 'humble bundle', isWaste: true},
     {name: 'pizza', isWaste: false},
-    {name: 'testing', isWaste: true, explanation: 'testing is a waste of time and time is money.'}
+    {name: 'testing', isWaste: true, explanation: 'testing is a waste of time and time is money.'},
+    {name: 'terraria', isWaste: false, explanation: 'its kinda like minecraft and minecraft is good so no not a waste'},
+    {name: 'pomik', isWaste: true},
+    {name: 'faithful', isWaste: 'custom', custom: 'depends'}
 ];
