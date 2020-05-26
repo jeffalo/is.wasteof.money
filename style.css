@@ -79,3 +79,7 @@ main{
 .noline{
     text-decoration: none;
 }
+
+.suggestion{
+    font-weight: bold;
+}
