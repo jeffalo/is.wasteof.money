@@ -24,7 +24,7 @@
     <main>
         <div class="incontainer"><strong class="thething">Is <input oninput="check()" spellcheck="false" id="input" type="text"> a waste of money?</strong></div>
         <div id="result" class="result">Try to type something!</div>
-        <div id="explanation" class="result"></div>
+        <div id="explanation" class="result" style="display: none"></div>
     </main>
 </body>
 <script>
@@ -62,6 +62,13 @@
         result.innerHTML =  {"free": "its free!!", true: "yes", false: "no", "custom": custom, "undefined": generateFuseMessage(input.value)}[isWaste];
     }
 
+explanation.addEventListener('DOMSubtreeModified',() => {
+    if (!explanation.innerHTML) {
+        explanation.style.display = "none";
+    } else {
+        explanation.removeAttribute("style");
+    };
+});
 </script>
 </html>
 
