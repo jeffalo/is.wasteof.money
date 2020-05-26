@@ -63,12 +63,16 @@
         result.innerHTML =  {"free": "its free!!", true: "yes", false: "no", "custom": custom, "undefined": generateFuseMessage(input.value)}[isWaste];
     }
 
-explanation.addEventListener('DOMSubtreeModified',() => {
+    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
+    var observer = new MutationObserver(() => {
     if (!explanation.innerHTML) {
         explanation.style.display = "none";
     } else {
         explanation.removeAttribute("style");
     };
+});
+observer.observe(explanation, {
+childList: true
 });
 </script>
 </html>
