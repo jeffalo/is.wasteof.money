@@ -9,7 +9,7 @@ const items  = [
     {name: 'optifine cape', isWaste: false},
     {name: 'samsung', isWaste: true},
     {name: 'google', isWaste: 'free'},
-    {name: 'james', isWaste: true},
+    {name: 'james', isWaste: true, explanation: 'im not sure why but i was forced to and all they said was "yeah james is stinky"'},
     {name: 'minecraft bedrock', isWaste: true},
     {name: 'fortnite', isWaste: 'free'},
     {name: 'money', isWaste: true},
@@ -18,5 +18,8 @@ const items  = [
     {name: 'youtube red', isWaste: true},
     {name: 'humble bundle', isWaste: true},
     {name: 'pizza', isWaste: false},
-    {name: 'testing', isWaste: true, explanation: 'testing is a waste of time and time is money.'}
+    {name: 'testing', isWaste: true, explanation: 'testing is a waste of time and time is money.'},
+    {name: 'terraria', isWaste: false, explanation: 'its kinda like minecraft and minecraft is good so no not a waste'},
+    {name: 'pomik', isWaste: true},
+    {name: 'faithful', isWaste: 'custom', custom: 'depends'}
 ];
