@@ -55,25 +55,23 @@
     const check = () => {
         let found = items.find(item => item.name == input.value.toLowerCase());
 
-        let isWaste = String(found && found.isWaste);
-        let custom = found && found.custom;
-
-        explanation.innerHTML = found ? found.explanation || "" : "";
+        let isWaste = "undefined";
+        let custom = ''
+        if (found) {
+            isWaste = found.isWaste;
+            explanation.innerHTML = found.explanation || "";
+            custom = found.custom || ''
+            explanation.style.display = 'block'
+            if(explanation.innerHTML == ''){
+                explanation.style.display = 'none'
+            }
+        } else {
+            explanation.innerText = ''
+            explanation.style.display = 'none'
+        }
 
         result.innerHTML =  {"free": "its free!!", true: "yes", false: "no", "custom": custom, "undefined": generateFuseMessage(input.value)}[isWaste];
     }
-
-    var MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
-    var observer = new MutationObserver(() => {
-    if (!explanation.innerHTML) {
-        explanation.style.display = "none";
-    } else {
-        explanation.removeAttribute("style");
-    };
-});
-observer.observe(explanation, {
-childList: true
-});
 </script>
 </html>
 
