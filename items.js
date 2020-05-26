@@ -20,6 +20,6 @@ const items  = [
     {name: 'pizza', isWaste: 'custom', custom: 'never', explanation: 'unless it is a <a href="https://i.pinimg.com/originals/3a/be/70/3abe70be046eed475708ee9b0dd21179.jpg">golden pizza</a>'},
     {name: 'testing', isWaste: true, explanation: 'testing is a waste of time and time is money.'},
     {name: 'terraria', isWaste: false, explanation: 'its kinda like minecraft and minecraft is good so no not a waste'},
-    {name: 'pomik', isWaste: true},
-    {name: 'faithful', isWaste: 'custom', custom: 'depends'}
+    {name: 'faithful', isWaste: 'custom', custom: 'depends'},
+    {name: 'css', isWaste: 'true', explanation: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'}
 ];

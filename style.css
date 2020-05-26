@@ -72,7 +72,8 @@ input:focus{
   }
 
 main{
-    padding: 25px
+    padding: 25px;
+    word-wrap: break-word;
 }
 
 .noline{
