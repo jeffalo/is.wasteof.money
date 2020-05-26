@@ -17,5 +17,6 @@ const items  = [
     {name: 'hulu', isWaste: true},
     {name: 'youtube red', isWaste: true},
     {name: 'humble bundle', isWaste: true},
-    {name: 'pizza', isWaste: false}
+    {name: 'pizza', isWaste: false},
+    {name: 'testing', isWaste: true, explanation: 'testing is a waste of time and time is money.'}
 ];
