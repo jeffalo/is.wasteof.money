@@ -1,0 +1,21 @@
+const items  = [
+    {name: 'iphone', isWaste: true},
+    {name: 'android', isWaste: false},
+    {name: 'minecraft', isWaste: false},
+    {name: 'air', isWaste: 'free'},
+    {name: 'https', isWaste: 'free'},
+    {name: 'this website', isWaste: true},
+    {name: 'optifine', isWaste: 'free'},
+    {name: 'optifine cape', isWaste: false},
+    {name: 'samsung', isWaste: true},
+    {name: 'google', isWaste: 'free'},
+    {name: 'james', isWaste: true},
+    {name: 'minecraft bedrock', isWaste: true},
+    {name: 'fortnite', isWaste: 'free'},
+    {name: 'money', isWaste: true},
+    {name: 'netflix', isWaste: true},
+    {name: 'hulu', isWaste: true},
+    {name: 'youtube red', isWaste: true},
+    {name: 'humble bundle', isWaste: true},
+    {name: 'pizza', isWaste: false}
+];
