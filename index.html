@@ -53,11 +53,10 @@
 
     const check = () => {
         let found = items.find(item => item.name == input.value.toLowerCase());
-        let isWaste = "undefined";
-        if (found) {
-            isWaste = found.isWaste;
-            explanation.innerText = found.explanation || "";
-        }
+        let isWaste = String(found && found.isWaste);
+
+        explanation.innerText = found ? found.explanation || "" : "";
+
         result.innerText =  {"free": "its free!!", true: "yes", false: "no", "undefined": generateFuseMessage(input.value)}[isWaste];
     }
 
