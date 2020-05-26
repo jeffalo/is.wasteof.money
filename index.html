@@ -22,7 +22,7 @@
         <hr> 
     </header>   
     <main>
-        <div class="incontainer"><strong class="thething">Is <input onkeypress="check()" onchange="check()" spellcheck="false" id="input" type="text"> a waste of money?</strong></div>
+        <div class="incontainer"><strong class="thething">Is <input onkeypress="check()" spellcheck="false" id="input" type="text"> a waste of money?</strong></div>
         <div id="result" class="result">Try to type something!</div>
         <div id="explanation" class="result"></div>
     </main>
@@ -60,7 +60,7 @@
 
         explanation.innerHTML = found ? found.explanation || "" : "";
 
-        result.innerHTML =  {"free": "its free!!", true: "yes", false: "no", "custom": custom, "undefined": generateFuseMessage(input.value)}[isWaste];
+        result.innerHTML =  {"free": "its free!!", true: "yes", false: "no", "custom": custom, "undefined": setTimeout(()=>check());generateFuseMessage(input.value)}[isWaste];
     }
 
 </script>
