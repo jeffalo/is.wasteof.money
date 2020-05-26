@@ -24,14 +24,15 @@
     <main>
         <div class="incontainer"><strong class="thething">Is <input oninput="check()" spellcheck="false" id="input" type="text"> a waste of money?</strong></div>
         <div id="result" class="result">Try to type something!</div>
-        <div id="explanation" class="result"></div>
+        <div id="explanation" class="result" style="display: none"></div>
     </main>
 </body>
 <script>
     const explanation = document.getElementById('explanation');
     const result = document.getElementById('result');
     const input  = document.getElementById('input');
-
+    input.focus()
+    
     // 2. Set up the Fuse instance
     const fuse = new Fuse(items, {
         keys: ['name'],
@@ -46,7 +47,7 @@
             return "Not found yet... keep trying?";
         
         const fuseResults = fuse.search(term);
-        let matched = fuseResults.map(x => x.item.name).join(", ");
+        let matched = fuseResults.map(x => "<div class='suggestion' onclick='input.value = `" + x.item.name + "`;input.click();check();' style='cursor:pointer'>" + x.item.name + "</div>").join("");
 
         return matched? "Did you mean: " + matched: "Not found yet... keep trying?";
     }
@@ -54,14 +55,23 @@
     const check = () => {
         let found = items.find(item => item.name == input.value.toLowerCase());
 
-        let isWaste = String(found && found.isWaste);
-        let custom = found && found.custom;
+        let isWaste = "undefined";
+        let custom = ''
+        if (found) {
+            isWaste = found.isWaste;
+            explanation.innerHTML = found.explanation || "";
+            custom = found.custom || ''
+            explanation.style.display = 'block'
+            if(explanation.innerHTML == ''){
+                explanation.style.display = 'none'
+            }
+        } else {
+            explanation.innerText = ''
+            explanation.style.display = 'none'
+        }
 
-        explanation.innerText = found ? found.explanation || "" : "";
-
-        result.innerText =  {"free": "its free!!", true: "yes", false: "no", "custom": custom, "undefined": generateFuseMessage(input.value)}[isWaste];
+        result.innerHTML =  {"free": "its free!!", true: "yes", false: "no", "custom": custom, "undefined": generateFuseMessage(input.value)}[isWaste];
     }
-
 </script>
 </html>
 

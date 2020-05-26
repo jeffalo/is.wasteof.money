@@ -3,7 +3,7 @@ const items  = [
     {name: 'android', isWaste: false},
     {name: 'minecraft', isWaste: false},
     {name: 'air', isWaste: 'free'},
-    {name: 'https', isWaste: 'free'},
+    {name: 'https', isWaste: 'custom', custom: 'depends', explanation: 'https is not a waste of money if you get it free'},
     {name: 'this website', isWaste: 'custom', custom: 'how dare you check if this website is a waste of money!! its free how could it possibly be???'},
     {name: 'optifine', isWaste: 'free'},
     {name: 'optifine cape', isWaste: false},
@@ -17,9 +17,14 @@ const items  = [
     {name: 'hulu', isWaste: true},
     {name: 'youtube red', isWaste: true},
     {name: 'humble bundle', isWaste: true},
-    {name: 'pizza', isWaste: false},
+    {name: 'pizza', isWaste: 'custom', custom: 'never', explanation: 'unless it is a <a href="https://i.pinimg.com/originals/3a/be/70/3abe70be046eed475708ee9b0dd21179.jpg">golden pizza</a>'},
     {name: 'testing', isWaste: true, explanation: 'testing is a waste of time and time is money.'},
     {name: 'terraria', isWaste: false, explanation: 'its kinda like minecraft and minecraft is good so no not a waste'},
-    {name: 'pomik', isWaste: true},
-    {name: 'faithful', isWaste: 'custom', custom: 'depends'}
+    {name: 'faithful', isWaste: 'custom', custom: 'depends'},
+    {name: 'css', isWaste: 'true', explanation: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'},
+    {name: 'water', isWaste: 'custom', custom: 'depends', explanation: 'it really depends on a lot of things'},
+    {name: 'toilet paper', isWaste: true, explanation: 'welcome to 2020'},
+    {name: 'i', isWaste: true},
+    {name: 'life', isWaste: 'custom', custom: 'depends'},
+    {name: 'pain', isWaste: 'custom', custom: 'depends', explanation: 'what kind of pain are you talking about? bread is not a waste of money'}
 ];
