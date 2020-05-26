@@ -24,9 +24,11 @@
     <main>
         <div class="incontainer"><strong class="thething">Is <input oninput="check()" spellcheck="false" id="input" type="text"> a waste of money?</strong></div>
         <div id="result" class="result">Try to type something!</div>
+        <div id="explanation" class="result"></div>
     </main>
 </body>
 <script>
+    const explanation = document.getElementById('explanation');
     const result = document.getElementById('result');
     const input  = document.getElementById('input');
 
@@ -51,8 +53,11 @@
 
     const check = () => {
         let found = items.find(item => item.name == input.value.toLowerCase());
-        isWaste = found? found.isWaste: "undefined";
-
+        let isWaste = "undefined";
+        if (found) {
+            isWaste = found.isWaste;
+            explanation.innerText = found.explanation || "";
+        }
         result.innerText =  {"free": "its free you idot", true: "yes", false: "no", "undefined": generateFuseMessage(input.value)}[isWaste];
     }
 
