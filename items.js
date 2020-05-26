@@ -9,7 +9,7 @@ const items  = [
     {name: 'optifine cape', isWaste: false},
     {name: 'samsung', isWaste: true},
     {name: 'google', isWaste: 'free'},
-    {name: 'james', isWaste: true},
+    {name: 'james', isWaste: true, explanation: 'im not sure why but i was forced to and all they said was "yeah james is stinky"'},
     {name: 'minecraft bedrock', isWaste: true},
     {name: 'fortnite', isWaste: 'free'},
     {name: 'money', isWaste: true},
