@@ -12,6 +12,7 @@
     <link rel="icon" href="/assets/logo.png">
     <title>is.wasteof.money</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.0.0"></script>
 </head>
 <body>
     <header>
@@ -48,11 +49,40 @@
         {name: 'humble bundle', isWaste: true}
     ];
 
-    check = () => {
+    // 2. Set up the Fuse instance
+    const fuse = new Fuse(items, {
+        keys: ['name'],
+        threshold: 0.3,
+        minMatchCharLength: 2
+    })
+
+    const generateFuseMessage = function(term) {
+        term = term.toLowerCase();
+
+        if (term.length < 3){
+            return "Not found yet... keep trying?";
+        }
+        
+        const fuseResults = fuse.search(term);
+        let message = "Did you mean: ";
+
+        for (let item of fuseResults){
+            message += item.item.name + ", ";
+        }
+
+        if (message != "Did you mean: "){
+            return message.slice(0, -2);
+        } else {
+            return "Not found yet... keep trying?";
+        }    
+    }
+
+    const check = () => {
         let found = items.find(item => item.name == input.value.toLowerCase());
         isWaste = found? found.isWaste: "undefined";
 
-        result.innerText =  {"free": "its free you idot", true: "yes", false: "no", "undefined": "Not found yet... keep trying?"}[isWaste];
+        result.innerText =  {"free": "its free you idot", true: "yes", false: "no", "undefined": generateFuseMessage(input.value)}[isWaste];
     }
+
 </script>
 </html>
