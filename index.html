@@ -13,6 +13,7 @@
     <title>is.wasteof.money</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.0.0"></script>
+    <script src="items.js"></script>
 </head>
 <body>
     <header>
@@ -28,27 +29,6 @@
 <script>
     const result = document.getElementById('result');
     const input  = document.getElementById('input');
-    const items  = [
-        {name: 'iphone', isWaste: true},
-        {name: 'android', isWaste: false},
-        {name: 'minecraft', isWaste: false},
-        {name: 'air', isWaste: 'free'},
-        {name: 'https', isWaste: 'free'},
-        {name: 'this website', isWaste: true},
-        {name: 'optifine', isWaste: 'free'},
-        {name: 'optifine cape', isWaste: false},
-        {name: 'samsung', isWaste: true},
-        {name: 'google', isWaste: 'free'},
-        {name: 'james', isWaste: true},
-        {name: 'minecraft bedrock', isWaste: true},
-        {name: 'fortnite', isWaste: 'free'},
-        {name: 'money', isWaste: true},
-        {name: 'netflix', isWaste: true},
-        {name: 'hulu', isWaste: true},
-        {name: 'youtube red', isWaste: true},
-        {name: 'humble bundle', isWaste: true},
-        {name: 'pizza', isWaste: false}
-    ];
 
     // 2. Set up the Fuse instance
     const fuse = new Fuse(items, {
@@ -67,7 +47,7 @@
         let message = "Did you mean: ";
 
         for (let item of fuseResults)
-            message += item.item.name + ",";
+            message += item.item.name + ", ";
 
         return message != "Did you mean: "? message.slice(0, -1): "Not found yet... keep trying?";
     }
