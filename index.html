@@ -22,7 +22,7 @@
         <hr> 
     </header>   
     <main>
-        <div class="incontainer"><strong class="thething">Is <input onkeypress="check()" spellcheck="false" id="input" type="text"> a waste of money?</strong></div>
+        <div class="incontainer"><strong class="thething">Is <input onchange="check()" spellcheck="false" id="input" type="text"> a waste of money?</strong></div>
         <div id="result" class="result">Try to type something!</div>
         <div id="explanation" class="result"></div>
     </main>
@@ -48,7 +48,7 @@
         
         const fuseResults = fuse.search(term);
         let matched = fuseResults.map(x => "<div onclick='input.value = `" + x.item.name + "`;input.click();' style='cursor:pointer'>" + x.item.name + "</div>").join(", ");
-        check();
+
         return matched? "Did you mean: " + matched: "Not found yet... keep trying?";
     }
 
