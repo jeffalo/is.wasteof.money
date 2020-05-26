@@ -62,6 +62,13 @@
         result.innerHTML =  {"free": "its free!!", true: "yes", false: "no", "custom": custom, "undefined": generateFuseMessage(input.value)}[isWaste];
     }
 
+explanation.addEventListener('DOMSubtreeModified',() => {
+    if (!this.innerHTML) {
+        this.style.display = "none";
+    } else {
+        this.removeAttribute("style");
+    };
+});
 </script>
 </html>
 
