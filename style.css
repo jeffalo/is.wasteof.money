@@ -59,9 +59,12 @@ input:focus{
     padding-bottom: 200px;
 }
 
-.result{
-    text-align: center;
+#result {
     padding-bottom: 100px;
+}
+
+.result {
+   text-align: center;
 }
 
 ::selection {
@@ -78,8 +81,4 @@ main{
 
 .noline{
     text-decoration: none;
-}
-
-.suggestion{
-    font-weight: bold;
 }
