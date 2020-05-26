@@ -57,7 +57,7 @@
         let isWaste = String(found && found.isWaste);
         let custom = found && found.custom;
 
-        explanation.innerText = found ? found.explanation || "" : "";
+        explanation.innerHTML = found ? found.explanation || "" : "";
 
         result.innerText =  {"free": "its free!!", true: "yes", false: "no", "custom": custom, "undefined": generateFuseMessage(input.value)}[isWaste];
     }

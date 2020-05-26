@@ -17,7 +17,7 @@ const items  = [
     {name: 'hulu', isWaste: true},
     {name: 'youtube red', isWaste: true},
     {name: 'humble bundle', isWaste: true},
-    {name: 'pizza', isWaste: false},
+    {name: 'pizza', isWaste: 'custom', custom: 'never', explanation: 'unless it is a <a href="https://i.pinimg.com/originals/3a/be/70/3abe70be046eed475708ee9b0dd21179.jpg">golden pizza</a>'},
     {name: 'testing', isWaste: true, explanation: 'testing is a waste of time and time is money.'},
     {name: 'terraria', isWaste: false, explanation: 'its kinda like minecraft and minecraft is good so no not a waste'},
     {name: 'pomik', isWaste: true},
