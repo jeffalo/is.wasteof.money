@@ -60,7 +60,7 @@
 
         explanation.innerHTML = found ? found.explanation || "" : "";
 
-        result.innerHTML =  {"free": "its free!!", true: "yes", false: "no", "custom": custom, "undefined": setTimeout(()=>check());generateFuseMessage(input.value)}[isWaste];
+        result.innerHTML =  {"free": "its free!!", true: "yes", false: "no", "custom": custom, "undefined": (() => {setTimeout(()=>check());return generateFuseMessage(input.value)})()}[isWaste];
     }
 
 </script>
