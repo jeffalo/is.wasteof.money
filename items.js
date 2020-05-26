@@ -4,7 +4,7 @@ const items  = [
     {name: 'minecraft', isWaste: false},
     {name: 'air', isWaste: 'free'},
     {name: 'https', isWaste: 'free'},
-    {name: 'this website', isWaste: true},
+    {name: 'this website', isWaste: 'custom', custom: 'how dare you check if this website is a waste of money!! its free how could it possibly be???'},
     {name: 'optifine', isWaste: 'free'},
     {name: 'optifine cape', isWaste: false},
     {name: 'samsung', isWaste: true},
