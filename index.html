@@ -47,7 +47,7 @@
             return "Not found yet... keep trying?";
         
         const fuseResults = fuse.search(term);
-        let matched = fuseResults.map(x => "<div onclick='input.value = `" + x.item.name + "`' style='cursor:pointer'>" + x.item.name + "</div>").join(", ");
+        let matched = fuseResults.map(x => "<div onclick='input.value = `" + x.item.name + "`;input.click();' style='cursor:pointer'>" + x.item.name + "</div>").join(", ");
 
         return matched? "Did you mean: " + matched: "Not found yet... keep trying?";
     }
