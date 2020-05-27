@@ -9,7 +9,6 @@ const items  = [
     {name: 'optifine cape', isWaste: false},
     {name: 'samsung', isWaste: true},
     {name: 'google', isWaste: 'free'},
-    {name: 'james', isWaste: true, explanation: 'im not sure why but i was forced to and all they said was "yeah james is stinky"'},
     {name: 'minecraft bedrock', isWaste: true},
     {name: 'fortnite', isWaste: 'free'},
     {name: 'money', isWaste: true},
@@ -29,5 +28,6 @@ const items  = [
     {name: 'pain', isWaste: 'custom', custom: 'depends', explanation: 'what kind of pain are you talking about? bread is not a waste of money'},
     {name: 'infinite pain', isWaste: 'free', explanation: 'even though this is free i\'d say its still a waste of free'},
     {name: 'video games', isWaste: 'custom', custom: 'depends', explanation: 'video games is too general i need more than just video games how am i supposed to tell you if all video games are a waste of money?? some are even free so i dont understand what is your problem???'},
-    {name: 'minecraft dungeons', isWaste: false}
+    {name: 'minecraft dungeons', isWaste: false},
+    {name: 'internet', isWaste: true}
 ];
