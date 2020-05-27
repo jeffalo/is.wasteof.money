@@ -1,4 +1,4 @@
-# is.wasteof.money
+# is it a waste of money
 A website to tell you if something is a waste of money.
 
 ## FAQ
@@ -9,7 +9,7 @@ I'm not sure
 
 ### Can I add something
 
-Yes, add an issue or if you're smart you can do a PR.
+Yes, add an issue
 
 ### What can an item be?
 
