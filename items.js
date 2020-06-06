@@ -31,4 +31,7 @@ const items  = [
     {name: 'minecraft dungeons', isWaste: false},
     {name: 'internet', isWaste: true},
     {name: 'suess ptgi', isWaste: false}
+    {name: 'jeffalo', isWaste: true, explanation: 'lol idk why i did this'},
+    {name: 'hand sanitizor', isWaste: true, explanation: 'more for me boi'},
+    {name: 'alot of toilet paper', isWaste: true, explanation: 'stop it hoarders. the answer is and always will be yes. If you need help deciding go to <a href= "https://howmuchtoiletpaper.com">this site.<a>'},
 ];
