@@ -30,5 +30,6 @@ const items  = [
     {name: 'video games', isWaste: 'custom', custom: 'depends', explanation: 'video games is too general i need more than just video games how am i supposed to tell you if all video games are a waste of money?? some are even free so i dont understand what is your problem???'},
     {name: 'minecraft dungeons', isWaste: false},
     {name: 'internet', isWaste: true},
-    {name: 'suess ptgi', isWaste: false}
+    {name: 'seus ptgi', isWaste: false},
+    {name: 'apple pro stand', isWaste: true, explanation: 'A MONITOR STAND FOR 999$?!? ARE YOU FOR REAL, IT DEFINITELY IS A WASTE OF MONEY REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE'},
 ];
