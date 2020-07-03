@@ -10,7 +10,7 @@ const items  = [
     {name: 'samsung', isWaste: true},
     {name: 'google', isWaste: 'free'},
     {name: 'minecraft bedrock', isWaste: true},
-    {name: 'fortnite', isWaste: 'free'},
+    {name: 'fortnite', isWaste: 'free', explanation: 'but... this <i>is</i> fortnite soooo.... maybe thats not so true'},
     {name: 'money', isWaste: true},
     {name: 'netflix', isWaste: true},
     {name: 'hulu', isWaste: true},
@@ -29,5 +29,7 @@ const items  = [
     {name: 'infinite pain', isWaste: 'free', explanation: 'even though this is free i\'d say its still a waste of free'},
     {name: 'video games', isWaste: 'custom', custom: 'depends', explanation: 'video games is too general i need more than just video games how am i supposed to tell you if all video games are a waste of money?? some are even free so i dont understand what is your problem???'},
     {name: 'minecraft dungeons', isWaste: false},
-    {name: 'internet', isWaste: true}
+    {name: 'internet', isWaste: true},
+    {name: 'seus ptgi', isWaste: false},
+    {name: 'apple pro stand', isWaste: true, explanation: 'A MONITOR STAND FOR 999$?!? ARE YOU FOR REAL, IT DEFINITELY IS A WASTE OF MONEY REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE'},
 ];

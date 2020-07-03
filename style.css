@@ -24,6 +24,11 @@ a{
 
 hr{
     border-color: var(--color);
+    border-width: 1px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    margin-top: 20px;
 }
 
 p{
