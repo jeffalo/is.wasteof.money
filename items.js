@@ -35,4 +35,5 @@ const items  = [
     {name: 'microtransactions in mobile games', isWaste: true},
     {name: 'minecraft 3ds', isWaste: true},
     {name: 'drugs', isWaste: 'custom', custom: 'depends', explanation: 'im not qualified to tell this to you speak to your doctor or something'}
+    {name: 'scratch', isWaste: 'false', explanation: 'Come on! Scratch is awesome and it's totally free!'}
 ];
