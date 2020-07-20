@@ -32,5 +32,7 @@ const items  = [
     {name: 'internet', isWaste: true},
     {name: 'seus ptgi', isWaste: false},
     {name: 'apple pro stand', isWaste: true, explanation: 'A MONITOR STAND FOR 999$?!? ARE YOU FOR REAL, IT DEFINITELY IS A WASTE OF MONEY REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE'},
-    {name: 'microtransactions in mobile games', isWaste: true}
+    {name: 'microtransactions in mobile games', isWaste: true},
+    {name: 'Minecraft for Nintendo 3DS', isWaste: true},
+    {name: 'drugs', isWaste: 'custom', custom: 'depends', explanation: 'im not qualified to tell this to you speak to your doctor or something'}
 ];
