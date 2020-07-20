@@ -39,4 +39,5 @@ const items  = [
     {name: 'github', isWaste: 'free'}
     {name: 'github teams', isWaste: 'custom', explantion: 'it has free a option and if you pick that the no but if you pay for it yes'}
     {name: 'github PRO', isWaste: 'true'}
+    {name: 'Potato', isWaste: 'custom', custom: 'depends', explanation: 'if you grow your own then no if you go buy at the store than yes'}
 ];
