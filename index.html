@@ -73,7 +73,7 @@
         
     function hash() {
         if(location.hash){ 
-            decodeURIComponent(input.value = location.hash.replace('#',''))
+            input.value = decodeURIComponent(location.hash.replace('#',''))
             check() 
         }
     }
