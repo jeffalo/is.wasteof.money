@@ -31,7 +31,7 @@
     const explanation = document.getElementById('explanation');
     const result = document.getElementById('result');
     const input  = document.getElementById('input');
-    
+
     // 2. Set up the Fuse instance
     const fuse = new Fuse(items, {
         keys: ['name'],
@@ -69,6 +69,11 @@
         input.value = item;
         input.focus();
         check();
+    }
+        
+    if(location.hash){
+        input.value = location.hash.replace('#','')
+        check()
     }
 </script>
 </html>
