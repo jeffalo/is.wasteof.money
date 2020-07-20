@@ -71,10 +71,14 @@
         check();
     }
         
-    if(location.hash){
-        input.value = location.hash.replace('#','')
-        check()
+    function hash() {
+        if(location.hash){ 
+            input.value = location.hash.replace('#','') 
+            check() 
+        }
     }
+    window.addEventListener("popstate",hash);
+    hash();
 </script>
 </html>
 
