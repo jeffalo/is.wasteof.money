@@ -37,8 +37,8 @@ const items  = [
     {name: 'drugs', isWaste: 'custom', custom: 'depends', explanation: 'im not qualified to tell this to you speak to your doctor or something'},
     {name: 'my wife', isWaste: true},
     {name: 'my life', isWaste: true},
-    {name: 'Disney Plus', isWaste: false, explanation: "I mean unless you don't like Disney movies or something, but who doesn't like Disney?"},
-    {name: 'minecraft javaedition', isWaste: false, explanation: 'Is this even a question? I mean...'},
-    {name: 'collage', isWaste: 'custom', custom: 'idk', explanation: 'Can you afford it?'},
-    {name: 'niki capries', isWaste: 'custom', custom: 'Just do it'}
+    {name: 'disney plus', isWaste: false, explanation: "i mean unless you don't like disney movies or something, but who doesn't like disney?"},
+    {name: 'minecraft javaedition', isWaste: false, explanation: 'is this even a question? i mean...'},
+    {name: 'collage', isWaste: 'custom', custom: 'idk', explanation: 'can you afford it?'},
+    {name: 'niki capries', isWaste: 'custom', custom: 'just do it'}
 ];
