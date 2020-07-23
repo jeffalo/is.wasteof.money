@@ -34,5 +34,11 @@ const items  = [
     {name: 'apple pro stand', isWaste: true, explanation: 'A MONITOR STAND FOR 999$?!? ARE YOU FOR REAL, IT DEFINITELY IS A WASTE OF MONEY REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE'},
     {name: 'microtransactions in mobile games', isWaste: true},
     {name: 'minecraft 3ds', isWaste: true},
-    {name: 'drugs', isWaste: 'custom', custom: 'depends', explanation: 'im not qualified to tell this to you speak to your doctor or something'}
+    {name: 'drugs', isWaste: 'custom', custom: 'depends', explanation: 'im not qualified to tell this to you speak to your doctor or something'},
+    {name: 'my wife', isWaste: true},
+    {name: 'my life', isWaste: true},
+    {name: 'Disney Plus', isWaste: false, explanation: "I mean unless you don't like Disney movies or something, but who doesn't like Disney?"},
+    {name: 'minecraft javaedition', isWaste: false, explanation: 'Is this even a question? I mean...'},
+    {name: 'collage', isWaste: 'custom', custom: 'idk', explanation: 'Can you afford it?'},
+    {name: 'niki capries', isWaste: 'custom', custom: 'Just do it'}
 ];
