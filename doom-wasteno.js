@@ -1,1 +1,0 @@
-{name: 'DOOM Eternal', isWaste: false},
