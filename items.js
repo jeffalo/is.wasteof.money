@@ -38,5 +38,5 @@ const items  = [
     {name: 'drugs', isWaste: 'custom', custom: 'depends', explanation: 'im not qualified to tell this to you speak to your doctor or something'}, 
     {name: 'life', isWaste: 'custom', custom: 'depends', explanation: 'If you mean your life, totally, but life in general ... well, I guess, living stuff created money and also ways to waste it, so ... kinda ...'},
     {name: 'github', isWaste: 'custom', custom: 'depends', explanation: 'it depends - if you are using the standard version, it isn\'t, but if you are self-hosting on org-wide servers IT IS SUCH A WASTE OF MONEY'},
-    {name: 'play and app store developer fee', isWaste: true, explanation: 'both are a waste, but the apple subscription is just like "what the actual fuck'},
+    {name: 'play and app store developer fee', isWaste: true, explanation: 'both are a waste, but the apple subscription is just like "what the actual fuck"'},
 ];
