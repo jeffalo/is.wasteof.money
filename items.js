@@ -1,7 +1,7 @@
 const items  = [
     {name: 'iphone', isWaste: true},
     {name: 'android', isWaste: false},
-    {name: 'minecraft', isWaste: false},
+    {name: 'minecraft', isWaste: true},
     {name: 'air', isWaste: 'free'},
     {name: 'https', isWaste: 'custom', custom: 'depends', explanation: 'https is not a waste of money if you get it free'},
     {name: 'this website', isWaste: 'custom', custom: 'how dare you check if this website is a waste of money!! its free how could it possibly be???'},
@@ -29,11 +29,12 @@ const items  = [
     {name: 'infinite pain', isWaste: 'free', explanation: 'even though this is free i\'d say its still a waste of free'},
     {name: 'video games', isWaste: 'custom', custom: 'depends', explanation: 'video games is too general i need more than just video games how am i supposed to tell you if all video games are a waste of money?? some are even free so i dont understand what is your problem???'},
     {name: 'minecraft dungeons', isWaste: false},
-    {name: 'internet', isWaste: true},
+    {name: 'internet', isWaste: false, explanation: 'you need internet to access this page, so it´s definitely NOT waste of money'},
     {name: 'seus ptgi', isWaste: false},
     {name: 'apple pro stand', isWaste: true, explanation: 'A MONITOR STAND FOR 999$?!? ARE YOU FOR REAL, IT DEFINITELY IS A WASTE OF MONEY REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE'},
     {name: 'microtransactions in mobile games', isWaste: true},
     {name: 'minecraft 3ds', isWaste: true},
     {name: 'drugs', isWaste: 'custom', custom: 'depends', explanation: 'im not qualified to tell this to you speak to your doctor or something'}, 
     {name: 'life', isWaste: 'custom', custom: 'depends', explanation: 'If you mean your life, totally, but life in general ... well, I guess, living stuff created money and also ways to waste it, so ... kinda ...'}
-];
+    {name: 'Scratch', isWaste: 'free'}
+    ];
