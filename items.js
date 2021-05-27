@@ -35,6 +35,6 @@ const items  = [
     {name: 'microtransactions in mobile games', isWaste: true},
     {name: 'minecraft 3ds', isWaste: true},
     {name: 'drugs', isWaste: 'custom', custom: 'depends', explanation: 'im not qualified to tell this to you speak to your doctor or something'}, 
-    {name: 'life', isWaste: 'custom', custom: 'depends', explanation: 'If you mean your life, totally, but life in general ... well, I guess, living stuff created money and also ways to waste it, so ... kinda ...'}
-    {name: 'ocular', isWaste: 'free', explanation: 'why would an amazing, free forum searching tool be a waste of money?'},
+    {name: 'life', isWaste: 'custom', custom: 'depends', explanation: 'If you mean your life, totally, but life in general ... well, I guess, living stuff created money and also ways to waste it, so ... kinda ...'},
+    {name: 'ocular', isWaste: 'free', explanation: 'why would an amazing, free forum searching tool be a waste of money?'}
 ];
