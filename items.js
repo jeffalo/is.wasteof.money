@@ -5,7 +5,7 @@ const items  = [
     {name: 'github', isWaste: 'free'},
     {name: 'ethan burks', isWaste: true},
     {name: 'william egolf', isWaste: true},
-    {name: 'noah pytlowanyj', isWaste: true},
+    {name: 'noah pytlowanyj', isWaste: 'custom', custom: 'is this a name?<br>-noah p, 2021'},
     {name: 'air', isWaste: 'free'},
     {name: 'https', isWaste: 'custom', custom: 'depends', explanation: 'hehe repl'},
     {name: 'mariah bourzac', isWaste: 'custom', custom: 'mariah is annoying sometimes'},
