@@ -3,7 +3,7 @@ const items  = [
     {name: 'android', isWaste: false},
     {name: 'minecraft', isWaste: false},
     {name: 'github', isWaste: 'free'},
-    {name: 'ethan burks', isWaste: true},
+    {name: 'ethan burks', isWaste: false, explanation: 'he said so himself'},
     {name: 'william egolf', isWaste: true},
     {name: 'noah pytlowanyj', isWaste: 'custom', custom: 'is this a name?<br>-noah p, 2021'},
     {name: 'air', isWaste: 'free'},
