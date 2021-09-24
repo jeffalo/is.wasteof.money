@@ -7,7 +7,9 @@ const items  = [
     {name: 'william egolf', isWaste: true},
     {name: 'noah pytlowanyj', isWaste: true},
     {name: 'air', isWaste: 'free'},
-    {name: 'https', isWaste: 'custom', custom: 'depends', explanation: 'https is not a waste of money if you get it free'},
+    {name: 'https', isWaste: 'custom', custom: 'depends', explanation: 'hehe repl'},
+    {name: 'mariah bourzac', isWaste: 'custom', custom: 'mariah is annoying sometimes'},
+    {name: 'roman russo', isWaste: true, explanation: 'he is kinda annoying'},
     {name: 'this website', isWaste: 'custom', custom: 'how dare you check if this website is a waste of money!! its free how could it possibly be???'},
     {name: 'optifine', isWaste: 'free'},
     {name: 'optifine cape', isWaste: false},
@@ -34,11 +36,13 @@ const items  = [
     {name: 'infinite pain', isWaste: 'free', explanation: 'even though this is free i\'d say its still a waste of free'},
     {name: 'video games', isWaste: 'custom', custom: 'depends', explanation: 'video games is too general i need more than just video games how am i supposed to tell you if all video games are a waste of money?? some are even free so i dont understand what is your problem???'},
     {name: 'minecraft dungeons', isWaste: false},
-    {name: 'internet', isWaste: true},
-    {name: 'seus ptgi', isWaste: false},
+    {name: 'internet', isWaste: false},
+    {name: 'seus ptgi', isWaste: 'custom', custom: 'anyone know what that is?!'},
     {name: 'apple pro stand', isWaste: true, explanation: 'A MONITOR STAND FOR 999$?!? ARE YOU FOR REAL, IT DEFINITELY IS A WASTE OF MONEY REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE'},
     {name: 'microtransactions in mobile games', isWaste: true},
     {name: 'minecraft 3ds', isWaste: true},
-    {name: 'drugs', isWaste: 'custom', custom: 'depends', explanation: 'im not qualified to tell this to you speak to your doctor or something'}, 
-    {name: 'life', isWaste: 'custom', custom: 'depends', explanation: 'If you mean your life, totally, but life in general ... well, I guess, living stuff created money and also ways to waste it, so ... kinda ...'}
+    {name: 'life', isWaste: 'custom', custom: 'depends', explanation: 'If you mean your life, totally, but life in general ... well, I guess, living stuff created money and also ways to waste it, so ... kinda ...'},
+    {name: 'jabin nibbelink', isWaste: false, explanation: 'creator of this website. therefore, not a waste of money. also, this is a fork of "is.wasteof.money" by jeffalo, so thanks to him as well.'},
+    {name: 'scratch', isWaste: 'custom', custom: 'scratch is free, but they beg for "donates" (thanks to mybearworld lol) also, no, scratch is not a waste of money. thanks for coming to my website.'},
+    {name: 'guinea pig', isWaste: false, explanation: 'well, mariah said so, so i had to put it in as false. try "mariah bourzac"'}
 ];
