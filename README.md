@@ -3,9 +3,9 @@ A website to tell you if something is a waste of money.
 
 ## FAQ
 
-### Are you okay?
+### Is everything on here?
 
-I'm not sure
+No, but you can suggest things to be added on my Scratch profile, https://scratch.mit.edu/users/-gr/
 
 ### Can I add something
 
