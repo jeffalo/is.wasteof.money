@@ -15,6 +15,7 @@ const items  = [
     {name: 'optifine cape', isWaste: false},
     {name: 'samsung', isWaste: true},
     {name: 'google', isWaste: 'free'},
+    {name: 'gabriel addessi', isWaste: 'custom', custom: 'HECK YEAH HE IS A SCAM!', explanation: '-gabe, 2021'},
     {name: 'robux', isWaste: true},
     {name: 'minecraft bedrock', isWaste: true},
     {name: 'fortnite', isWaste: 'free', explanation: 'but... this <i>is</i> fortnite soooo.... maybe thats not so true'},
