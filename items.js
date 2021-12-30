@@ -16,7 +16,7 @@ const items  = [
     {name: 'hulu', isWaste: true},
     {name: 'youtube red', isWaste: true},
     {name: 'humble bundle', isWaste: true},
-    {name: 'pizza', isWaste: 'custom', custom: 'never', explanation: 'unless it is a <a href="https://i.pinimg.com/originals/3a/be/70/3abe70be046eed475708ee9b0dd21179.jpg">golden pizza</a>'},
+    {name: 'pizza', isWaste: 'custom', custom: 'never', explanation: 'unless it is a <a href="https://i.pinimg.com/originals/3a/be/70/3abe70be046eed475708ee9b0dd21179.jpg target="_blank">golden pizza</a>'},
     {name: 'testing', isWaste: true, explanation: 'testing is a waste of time and time is money.'},
     {name: 'terraria', isWaste: false, explanation: 'its kinda like minecraft and minecraft is good so no not a waste'},
     {name: 'faithful', isWaste: 'custom', custom: 'depends'},
@@ -34,6 +34,11 @@ const items  = [
     {name: 'apple pro stand', isWaste: true, explanation: 'A MONITOR STAND FOR 999$?!? ARE YOU FOR REAL, IT DEFINITELY IS A WASTE OF MONEY REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE'},
     {name: 'microtransactions in mobile games', isWaste: true},
     {name: 'minecraft 3ds', isWaste: true},
-    {name: 'drugs', isWaste: 'custom', custom: 'depends', explanation: 'im not qualified to tell this to you speak to your doctor or something'}, 
+    {name: 'drugs', isWaste: 'custom', custom: 'depends', explanation: 'im not qualified to tell this to you speak to your doctor or something'},
+    {name: 'flat earth', isWaste: 'custom', custom: 'what 0_0', explanation: 'flat earth... umm... thats not even purchasable so... idk ¯\_(ツ)_/¯ why did I just add this'},
+    {name: 'coca cola', isWaste: 'false', explanation: 'A WORTHY INVESTMENT! STONKS WILL ONLY GO UP 0_0'},
+    {name: 'linux', isWaste: 'free'},
+    {name: 'windows', isWaste: 'true', explanation:'what do you expect?'},
+    {name: 'education', isWaste: 'true', explanation:'this is 2021 after all...'},
     {name: 'life', isWaste: 'custom', custom: 'depends', explanation: 'If you mean your life, totally, but life in general ... well, I guess, living stuff created money and also ways to waste it, so ... kinda ...'}
 ];
