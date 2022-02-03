@@ -36,5 +36,5 @@ const items  = [
     {name: 'minecraft 3ds', isWaste: true},
     {name: 'drugs', isWaste: 'custom', custom: 'depends', explanation: 'im not qualified to tell this to you speak to your doctor or something'}, 
     {name: 'life', isWaste: 'custom', custom: 'depends', explanation: 'If you mean your life, totally, but life in general ... well, I guess, living stuff created money and also ways to waste it, so ... kinda ...'},
-    {name: 'wasteof.money', isWaste: true, explanation: 'Dude, it\'s in the name...'}
+    {name: 'wasteof.money', isWaste: true, explanation: 'Surprisingly, no, you should go check it out :)'}
 ];
