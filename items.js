@@ -1,4 +1,5 @@
 const items  = [
+    {name: '@daily_news', isWaste: true}
     {name: 'iphone', isWaste: true},
     {name: 'android', isWaste: false},
     {name: 'minecraft', isWaste: false},
