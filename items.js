@@ -24,6 +24,8 @@ const items  = [
     {name: 'water', isWaste: 'custom', custom: 'depends', explanation: 'it really depends on a lot of things'},
     {name: 'toilet paper', isWaste: true, explanation: 'welcome to 2020'},
     {name: 'i', isWaste: true},
+    {name: 'your mom', isWaste: true},
+    {name: 'html', isWaste: true, explanation: 'Not even a real programming language! *scoffs, but in british*'},
     {name: 'my life', isWaste: true},
     {name: 'pain', isWaste: 'custom', custom: 'depends', explanation: 'what kind of pain are you talking about? bread is not a waste of money'},
     {name: 'infinite pain', isWaste: 'free', explanation: 'even though this is free i\'d say its still a waste of free'},
