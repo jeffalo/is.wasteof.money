@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://is.wasteof.money" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Is it a waste of money?" />
-    <meta property="og:description" content="Find out if a product is a waste of money." />
-    <meta property="og:image" content="/assets/logo.png" />
-    <meta property="og:site_name" content="is.wasteof.money" />
+    <meta property="og:url" content="https://is.wasteof.money">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Is it a waste of money?">
+    <meta property="og:description" content="Find out if a product is a waste of money.">
+    <meta property="og:image" content="/assets/logo.png">
+    <meta property="og:site_name" content="is.wasteof.money">
     <link rel="icon" href="/assets/logo.png">
     <title>is.wasteof.money</title>
     <link rel="stylesheet" href="style.css">
@@ -16,17 +15,50 @@
     <script src="items.js"></script>
 </head>
 <body>
-    <header>
-        <a class="noline"href="/"><h1>is.wasteof.money</h1></a>
-        <a href="/about">about</a> | <a href="https://github.com/JeffaloBob/is.wasteof.money/">github</a>
-        <hr> 
-    </header>   
+    <nav class="sticky top-0 z-40 w-full items-center justify-center overflow-x-hidden border-b-4 border-black bg-primary-400 p-2 text-black mb-2"><div class="container mx-auto hidden w-full items-center justify-center md:flex"><a href="/" class="mr-8 flex items-center"><img class="h-4" src="https://beta.wasteof.money/brand/nav-logo-black.svg" alt="wasteof.money"> <span class="ml-2 hidden font-bold xl:inline">is.wasteof.money</span></a> <div class="flex w-full items-center"><a href="/" class="nav-link !mx-2 svelte-v13rmy"></a>    <div class="ml-auto"></div>    </div></div> <div class="container mx-auto flex w-full items-center justify-center md:hidden"><div class="flex w-full items-center justify-between px-2"><a href="/" class="flex items-center"><img class="h-4" src="/brand/nav-logo-black.svg" alt="wasteof.money"></a> <a href="/explore" class="nav-link !mx-1 svelte-v13rmy"><svg xmlns="http://www.w3.org/2000/svg" class="inline h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg></a>  <a href="/users/rgantzos" class="mx-1 flex w-auto items-center justify-center !no-underline"><img src="/users/rgantzos/picture" class="mr-2 inline h-5 w-5 rounded-full bg-white" alt="rgantzos"> <span class="hidden underline md:inline">@rgantzos</span></a> <a href="/messages" class="nav-link relative !mx-1 svelte-v13rmy"><span class="absolute flex h-4 content-center items-center justify-center rounded-md bg-red-500 p-2 text-xs text-white shadow" style="top: -4px; right: -5px;">1</span> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path></svg></a> <button><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg></button></div></div> </nav> 
     <main>
-        <div class="incontainer"><strong class="thething">Is <input oninput="check()" spellcheck="false" id="input" type="text" autofocus> a waste of money?</strong></div>
+        <div class="incontainer"><strong class="thething">Is <input oninput="check()" spellcheck="false" id="input" type="text" autofocus=""> a waste of money?</strong></div>
         <div id="result" class="result">Try to type something!</div>
         <div id="explanation" class="result"></div>
     </main>
-</body>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 <script>
     const explanation = document.getElementById('explanation');
     const result = document.getElementById('result');
@@ -80,5 +112,6 @@
     window.addEventListener("popstate",hash);
     hash();
 </script>
-</html>
 
+
+</body></html>
