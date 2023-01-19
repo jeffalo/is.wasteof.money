@@ -14,7 +14,7 @@ const items  = [
     {name: 'money', isWaste: true},
     {name: 'netflix', isWaste: true},
     {name: 'hulu', isWaste: true},
-    {name: 'youtube red', isWaste: true},
+    {name: 'youtube premium', isWaste: true},
     {name: 'humble bundle', isWaste: true},
     {name: 'pizza', isWaste: 'custom', custom: 'never', explanation: 'unless it is a <a href="https://i.pinimg.com/originals/3a/be/70/3abe70be046eed475708ee9b0dd21179.jpg">golden pizza</a>'},
     {name: 'testing', isWaste: true, explanation: 'testing is a waste of time and time is money.'},
@@ -36,4 +36,10 @@ const items  = [
     {name: 'minecraft 3ds', isWaste: true},
     {name: 'drugs', isWaste: 'custom', custom: 'depends', explanation: 'im not qualified to tell this to you speak to your doctor or something'}, 
     {name: 'life', isWaste: 'custom', custom: 'depends', explanation: 'If you mean your life, totally, but life in general ... well, I guess, living stuff created money and also ways to waste it, so ... kinda ...'}
+    {name: 'cyberpunk 2077', isWaste: true, explanation: 'you never buy a game that glitched right?' },
+    {name: 'wasteof.money', isWaste: false, explanation: 'its free for life and you should <a href="https://wasteof.money>join now</a>'},
+    {name: 'buying sublime text', isWaste: true, explanation: 'all features are available in the free version you just have a popup appear sometimes'},
+    {name: 'buying sublime merge', isWaste: true, explanation: 'all features are available in the free version you just have a popup appear sometimes'},
+    {name: 'windows', isWaste: true, explanation: 'use linux'},
+    {name: 'scratch', isWaste: 'free'},
 ];
