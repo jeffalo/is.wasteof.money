@@ -21,6 +21,7 @@ const items  = [
     {name: 'terraria', isWaste: false, explanation: 'its kinda like minecraft and minecraft is good so no not a waste'},
     {name: 'faithful', isWaste: 'custom', custom: 'depends'},
     {name: 'css', isWaste: 'true', explanation: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'},
+    {name: 'xss', isWaste: 'free', explanation: '<button onclick="this.innerText += \'s\'">xss</button>'},
     {name: 'water', isWaste: 'custom', custom: 'depends', explanation: 'it really depends on a lot of things'},
     {name: 'toilet paper', isWaste: true, explanation: 'welcome to 2020'},
     {name: 'i', isWaste: true},
