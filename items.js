@@ -14,7 +14,7 @@ const items  = [
     {name: 'money', isWaste: true},
     {name: 'netflix', isWaste: true},
     {name: 'hulu', isWaste: true},
-    {name: 'youtube red', isWaste: true},
+    {name: 'youtube premium', isWaste: true},
     {name: 'humble bundle', isWaste: true},
     {name: 'pizza', isWaste: 'custom', custom: 'never', explanation: 'unless it is a <a href="https://i.pinimg.com/originals/3a/be/70/3abe70be046eed475708ee9b0dd21179.jpg">golden pizza</a>'},
     {name: 'testing', isWaste: true, explanation: 'testing is a waste of time and time is money.'},
