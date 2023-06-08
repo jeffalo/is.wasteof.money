@@ -1,4 +1,7 @@
 const items  = [
+    {name: 'microsoft windows', isWaste: true, explanation: 'Download linux mint <a href="https://linuxmint.com/">here!</a>'},
+    {name: 'mac-os', isWaste: true, explanation: 'At least it doesn\'t have ads on the start menu...'},
+    {name: 'linux', isWaste: 'free', explanation: 'Most linux distro\' are free.'},
     {name: 'iphone', isWaste: true},
     {name: 'android', isWaste: false},
     {name: 'minecraft', isWaste: false},
